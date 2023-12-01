@@ -114,16 +114,18 @@ color: #e9e6f0;
         .navlogo { width: 20%; padding-right: 10%;}
         .main-nav { padding-top: 0%;}
         #home { padding-top: 15%}
-        #gallery{ padding-top: 11%;}
+        #gallery{ padding-top: 11%; grid-template-columns: repeat(1, 1fr); }
 }
 
 /**************************PHONE**************************/
 
 @media(max-width:425px){
-    header { font-size: 20px;}
+    header { font-size: 15px;}
     .navlogo { width: 20%; padding-right: 10%;}
     .main-nav { padding-top: 0%;}
     #home { padding-top: 15%}
+    #gallery{ padding-top: 11%; grid-template-columns: repeat(1, 1fr); margin-left: 20%; gap: 10px; }
+    #gallery img{width: 80%;}
 }
 
 
