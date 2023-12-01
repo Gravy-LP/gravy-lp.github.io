@@ -6,6 +6,9 @@ body{
     background-attachment: fixed;
     background-size: 100%;
 }
+::-webkit-scrollbar{
+    width: 0%;
+}
 
 /**************************HEADER**************************/
 header{
@@ -40,7 +43,7 @@ header a:hover{
     text-align: center;
 }
 
-#navlogo{
+.navlogo{
     display: flex;
     justify-content: center;
     padding-right: 50%;
@@ -66,6 +69,25 @@ header a:hover{
     height: 22%;
 }
 
+/**************************GALLERY**************************/
+
+#gallery{
+    margin-left: 12%;
+    padding-top: 9%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#gallery img{
+    width: 55%;
+}
+
+#gallery img:hover{
+    box-shadow: 0px 20px 25px white;
+    width: 60%;
+}
+
 /**************************FOOTER**************************/
 footer{
 background-color: #2b2343;
@@ -80,16 +102,28 @@ color: #e9e6f0;
 
 @media(max-width:1024px){
     header { font-size: 25px;}
-    #navlogo { width: 20%; padding-right: 50%;}
+    .navlogo { width: 20%; padding-right: 50%;}
     .main-nav { padding-top: 1.5%;}
     #home { padding-top: 12%}
+    #gallery{ padding-top: 11%;}
+}
+
+/**************************TABLET**************************/
+@media(max-width:768px){
+        header { font-size: 30px;}
+        .navlogo { width: 20%; padding-right: 10%;}
+        .main-nav { padding-top: 0%;}
+        #home { padding-top: 15%}
+        #gallery{ padding-top: 11%;}
 }
 
 /**************************PHONE**************************/
-@media(max-width:768px){
-        header { font-size: 20px;}
-        #navlogo { width: 20%; padding-right: 10%;}
-        .main-nav { padding-top: 0%;}
-        #home { padding-top: 15%}
+
+@media(max-width:425px){
+    header { font-size: 20px;}
+    .navlogo { width: 20%; padding-right: 10%;}
+    .main-nav { padding-top: 0%;}
+    #home { padding-top: 15%}
 }
+
 
