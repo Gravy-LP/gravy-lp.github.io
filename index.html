@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
-    <script type="text/javascript" src="index.js"></script>
-    <meta name="viewport" content="width=device-width">
-    <title>GravyLP</title>
+    <title>Alex Gravante</title>
 </head>
-
 <body>
     <!---------------------------------HEADER----------------------------------->
     <header>
-        <img class="navlogo" src="img/navlogo.png" width="200">
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="about.html">About</a>
+        <img id="nav-img" src="img/logo.svg">
+        <nav id="main-nav">
+            <button id="selected"><a id="nav-select" href="index.html">Home</a></button>
+            <button class="nav-btn"><a class="nav-a" href="portfolio.html">Portfolio</a></button>
+            <button class="nav-btn"><a class="nav-a" href="about.html">About me</a></button>
         </nav>
     </header>
     <!---------------------------------BODY----------------------------------->
+    <section id="homesections">
     <div id="home">
-        <img src="img/pfp.jpg">
-        <h1>GravyLP</h1>
-        <p>Graphic Design - Web Development - Video Editing - 
-            In-Game Photography
-        </p>
+        <div class="hometext">
+            <h1>Alex Gravante</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quae labore nobis porro eius ducimus asperiores ut magni cupiditate ipsam aut temporibus necessitatibus nam, iure eum. Illo tempore earum eius!</p>
+        </div>
+        <img id="portrait" src="img/portrait.png">
     </div>
-<main id="main">
-    
-</main>
-    <!---------------------------------FOOTER----------------------------------->
-    <footer>
-        <h1>FOOTER</h1>
-    </footer>
+    <div class="homebtn">
+        <button><a class="btn-a" href="about.html">Get to know me</a></button>
+        <button><a class="btn-a" href="portfolio.html">Get in tocuh</a></button>
+        <button><a class="btn-a" href="portfolio.html">See my work</a></button>
+    </div>
+    </section>
 </body>
+</html>
