@@ -13,7 +13,7 @@ header{
     display: flex;
     justify-content: space-between;
     height: 5%;
-    box-shadow: 0px 5px #41C7A5;
+    box-shadow: 0px px #41C7A5;
 }
 
 #selected{
@@ -135,12 +135,8 @@ header{
     font-size: 25px;
     font-family: 'Raleway', sans-serif;
     text-decoration:none;
-    color: #41C7A5;
-    transition-duration: 0.3s;
-}
-
-.btn-a:hover{
     color: #303030;
+    transition-duration: 0.3s;
 }
 
 /********ABOUTME********/
@@ -191,4 +187,41 @@ header{
     width: 22%;
     border-radius: 0px 70px 0px 70px;
     padding-left: 2%;
+}
+
+@media (max-width: 600px){
+
+    header{
+        display: block;
+        margin: 0 auto;
+    }
+    #nav-img{
+        padding: 25% auto;
+        width: 75%;
+    }
+    #main-nav{
+        visibility: hidden;
+    }
+
+    .nav-a{
+        font-size: 1px;
+    }
+
+    #homesections{
+        padding: 1% 2%;
+        width: 80%;
+        height: 100%;
+    }
+    #home{
+        flex-direction: column-reverse;
+    }
+    #portrait{
+        margin: 5% 15%;
+        width: 70%;
+        height: 70%;
+        border-radius: 250px 10px 250px 250px;
+        box-shadow: 2px 2px 15px #41C7A5;
+        animation: fade 3s;
+    }
+    
 }
