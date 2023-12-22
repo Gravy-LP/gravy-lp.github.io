@@ -1,0 +1,49 @@
+/********ABOUTME********/
+
+#about{
+    margin: 2%;
+    padding: 2%;
+    width: 1100;
+    border-radius: 25px;
+    background-color: #383942;
+    font-size: 22px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about2{
+    margin: 2%;
+    padding: 2%;
+    width: 1100;
+    border-radius: 25px;
+    background-color: #383942;
+    font-size: 22px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about3{
+    margin: 2%;
+    padding: 2%;
+    width: 1100;
+    border-radius: 25px;
+    background-color: #383942;
+    font-size: 22px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#portraitabt{
+    width: 22%;
+    border-radius: 0px 70px 0px 70px;
+    padding-right: 2%;
+}
+
+#portraitabt2{
+    width: 22%;
+    border-radius: 0px 70px 0px 70px;
+    padding-left: 2%;
+}

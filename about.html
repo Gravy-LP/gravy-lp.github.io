@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/719a633c98.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Alex Gravante</title>
+    <link rel="stylesheet" href="css/about.css">
+    <title>Alex Gravante - About me</title>
 </head>
 <body>
     <!---------------------------------HEADER----------------------------------->
-    <header>
-        <img id="nav-img" src="img/logo.svg">
+    <header class="desktopnav">
+        <img class="nav-img" src="img/logo.svg">
         <nav id="main-nav">
-            <button class="nav-btn"><a class="nav-a" href="index.html">Home</a></button>
+            <button id="selected"><a id="nav-select" href="index.html">Home</a></button>
             <button class="nav-btn"><a class="nav-a" href="portfolio.html">Portfolio</a></button>
-            <button id="selected"><a id="nav-select" href="about.html">About me</a></button>
+            <button class="nav-btn"><a class="nav-a" href="about.html">About me</a></button>
         </nav>
+    </header>
+
+    <header class="mobilenav">
+        <img class="nav-img" src="img/logo.svg">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav id="mobile-nav">
+            <ul>
+                <li><button class="nav-btn"><a class="nav-a" href="index.html">Home</a></button></li>
+               <li><button class="nav-btn"><a class="nav-a" href="portfolio.html">Portfolio</a></button></li>
+               <li><button class="nav-btn"><a class="nav-a" href="about.html">About me</a></button></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars fa-2xl" style="color: #41c7a5;"></i>
+        </label>
     </header>
     <!---------------------------------BODY----------------------------------->
     <div id="about">

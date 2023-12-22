@@ -1,0 +1,129 @@
+/*HOMEPAGE*/
+
+#homesections{
+    background-color: #383942;
+    border-radius: 10px;
+    padding: 2%;
+    width: 1100px;
+    height: 470px;
+    margin: 30px auto;
+}
+
+#home{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#portrait{
+    width: 32%;
+    height: 32%;
+    border-radius: 250px 10px 250px 250px;
+    box-shadow: 2px 2px 15px #41C7A5;
+    animation: fade 3s;
+}
+
+.hometext{
+    padding: 2px;
+}
+
+#home h1{ 
+    font-size: 75px;
+    font-style: italic;
+    color:#41C7A5;
+    animation: slide-up 1.5s;
+}
+
+#home p{
+    font-size: 25px; 
+    color: white;
+}
+
+@keyframes slide-up{
+    0%{transform: translateY(40px); opacity: 0%;}
+    100%{transform: translateY(0px); opacity: 100%;}
+}
+
+@keyframes fade {
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+    
+}
+
+.homebtn{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    padding-top: 50px;
+
+}
+
+.homebtn button{
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration:none;
+    color: white;
+    transition-duration: 0.3s;
+    height: 70px;
+    border-radius: 20px;
+    border: solid #23242E;
+    background-color: #383942;
+    transition-duration: 0.4s;
+
+}
+
+.homebtn button:hover{
+    height: 70px;
+    border-radius: 20px;
+    border: solid #383942;
+    background-color: #41C7A5;
+    cursor: pointer;
+    color: #23242E;
+    font-weight: bold;
+}
+
+
+
+/*
+.homelink{
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration:none;
+    color: white;
+    transition-duration: 0.3s;
+}
+*/
+
+
+/*MOBILE*/
+@media (max-width: 1279px){
+
+    #homesections{
+        margin-top: 14%;
+        padding: 1% 2%;
+        width: 80%;
+        height: 100%;
+    }
+    #home{
+        flex-direction: column-reverse;
+    }
+    #portrait{
+        margin: 5% 15%;
+        width: 70%;
+        height: 70%;
+        border-radius: 250px 10px 250px 250px;
+        box-shadow: 2px 2px 15px #41C7A5;
+        animation: fade 3s;
+    }
+    .homebtn{
+        margin: 5% 1%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .homebtn button{
+        margin: 1% auto;
+        width: 100%;
+    }
+     
+}
