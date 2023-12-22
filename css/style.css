@@ -17,6 +17,7 @@ html::-webkit-scrollbar {
     justify-content: space-between;
     height: 5%;
     box-shadow: 0px 2px #41C7A5;
+    animation: slide-left 1s;
 }
 
 .nav-a {
@@ -47,8 +48,6 @@ html::-webkit-scrollbar {
 .nav-img{
     width: 15%;
 }
-
-
 
 /*MOBILE-NAVBAR*/
 /*HIDE BUTTONS ON MOBILE*/
@@ -117,7 +116,7 @@ html::-webkit-scrollbar {
         padding: 25%;
         list-style: none;
         opacity: 0;
-        transition: opacity 100ms ease-in-out
+        transition: opacity 100ms ease-in-out;
     }
     .nav-toggle:checked ~ #mobile-nav{
         transform: scale(1,1);
@@ -125,9 +124,17 @@ html::-webkit-scrollbar {
 
     .nav-toggle:checked ~ nav ul{
         opacity: 1;
-        transition: opacity 250ms ease-in-out 250ms
+        transition: opacity 425ms ease-in-out 425ms;
+        animation: slide-left 1s;
     }
+
     .nav-a {
         color: #41C7A5;
     }
+    
+}
+
+@keyframes slide-left{
+    0%{transform: translateX(-50px); opacity: 0%;}
+    100%{transform: translateX(0px); opacity: 100%;}
 }
