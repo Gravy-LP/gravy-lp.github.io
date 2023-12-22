@@ -13,6 +13,7 @@
     text-align: center;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #portrait{
@@ -23,13 +24,8 @@
     animation: fade 3s;
 }
 
-.hometext{
-    padding: 2px;
-}
-
 #home h1{ 
     font-size: 75px;
-    font-style: italic;
     color:#41C7A5;
     animation: slide-up 1.5s;
 }
@@ -124,6 +120,9 @@
     .homebtn button{
         margin: 1% auto;
         width: 100%;
+    }
+    #home h1{
+        font-size: 70px;
     }
      
 }
