@@ -37,13 +37,58 @@
 }
 
 #portraitabt{
-    width: 22%;
+    width: 25rem;
     border-radius: 0px 70px 0px 70px;
     padding-right: 2%;
 }
 
 #portraitabt2{
-    width: 22%;
+    width: 25rem;
     border-radius: 0px 70px 0px 70px;
     padding-left: 2%;
+}
+
+/*MOBILE*/
+@media (max-width: 1279px){
+    
+    #about{
+        margin: 2%;
+        padding: 2%;
+        border-radius: 25px;
+        background-color: #383942;
+        font-size: 22px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #about2{
+        margin: 2%;
+        padding: 2%;
+        border-radius: 25px;
+        background-color: #383942;
+        font-size: 22px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #about3{
+        margin: 2%;
+        padding: 2%;
+        border-radius: 25px;
+        background-color: #383942;
+        font-size: 22px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #portraitabt{
+        width: 16rem;
+        border-radius: 0px 70px 0px 70px;
+        padding-right: 2%;
+    }
+
+
 }
