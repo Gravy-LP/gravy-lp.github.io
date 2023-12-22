@@ -83,7 +83,6 @@ header{
 
 .hometext{
     padding: 2px;
-
 }
 
 #home h1{ 
@@ -223,5 +222,43 @@ header{
         box-shadow: 2px 2px 15px #41C7A5;
         animation: fade 3s;
     }
-    
+    .btn-a{
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+        text-decoration:none;
+        color: #41C7A5;
+    }
+    .homebtn{
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .homebtn button{
+        margin-top: 4%;
+    }
+     
+}
+
+@media (max-width: 375px){
+    #homesections{
+        width: 85%;
+        height: 100%;
+        text-align: center;
+        background-clip: padding-box;
+        margin: 2% auto;
+    }
+    .homebtn{
+        position: absolute;
+        visibility: hidden;
+    }
+    #portrait{
+        border-radius: 10px 250px 250px 250px;
+        width: 85%;
+        margin: 1% 8%;
+    }
+    #home h1{ 
+        font-size: 55px;
+        margin: 2px auto;
+        color:#41C7A5;
+        animation: slide-up 1.5s;
+    }
 }
